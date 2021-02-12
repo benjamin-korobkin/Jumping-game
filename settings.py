@@ -12,14 +12,23 @@ PLAYER_ACC = 0.5  # Acceleration
 # Ground friction. For ice or sand, you would decrease/increase it
 PLAYER_FRICTION = -0.12
 PLAYER_GRAV = 0.6
-PLAYER_JUMP = 19
+PLAYER_JUMP = 18
 
-# starting platforms. (First is ground)
-PLATFORM_LIST = [(0, WINDOW_HEIGHT - 40, WINDOW_WIDTH, 40),
-                 (WINDOW_WIDTH/2 - 50, WINDOW_HEIGHT * 3/4, 100, 20),
-                 (125, WINDOW_HEIGHT - 300, 100, 20),
-                 (350, 200, 100, 20),
-                 (175, 100, 50, 15)]
+# Powerup settings
+BOOST_POWER = 60
+POW_SPAWN_PCT = 7
+# Mob settings
+MOB_FREQ = 5000
+# Layers
+PLAYER_LAYER = 2
+PLATFORM_LAYER = 1
+POW_LAYER = 1
+MOB_LAYER = 2
+CLOUD_LAYER = 0
+# starting platforms (aside from ground)
+PLATFORM_LIST = [(WINDOW_WIDTH/2 - 50, WINDOW_HEIGHT * 3/4),
+                 (125, WINDOW_HEIGHT - 300),
+                 (350, 200), (175, 100)]
 
 # Images and colors
 WHITE = (255, 255, 255)
@@ -29,4 +38,4 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 YELLOW = (255, 255, 0)
 LIGHTBLUE = (0, 155, 155)
-BGCOLOR = LIGHTBLUE
+BGCOLOR = BLUE
