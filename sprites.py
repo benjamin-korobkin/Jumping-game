@@ -134,11 +134,12 @@ class Cloud(pg.sprite.Sprite):
         self.image = choice(self.game.cloud_images)
         self.image.set_colorkey(BLACK)
         scale = randrange(50, 101) / 100
-        self.image = pg.transform.scale(self.image, (int(self.rect.width * scale),
-                                                    int(self.rect.height * scale)))
         self.rect = self.image.get_rect()
         self.rect.x = randrange(0, WINDOW_WIDTH - self.rect.width)
         self.rect.y = randrange(-500, -50)
+        self.image = pg.transform.scale(self.image, (int(self.rect.width * scale), int(self.rect.height * scale)))
+
+
 
     def update(self):
         if self.rect.top > WINDOW_HEIGHT * 2:

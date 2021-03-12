@@ -54,7 +54,7 @@ class Game:
         self.mob_timer = 0  # To track when mobs spawn
         ground = Platform(self, 0, WINDOW_HEIGHT-60)
         ground.image = pg.Surface((WINDOW_WIDTH, 60))
-        ground.image.fill(GREEN)
+        ground.image.fill(BROWN)
         ground.rect = ground.image.get_rect()
         ground.rect.x = 0
         ground.rect.y = WINDOW_HEIGHT - 60
